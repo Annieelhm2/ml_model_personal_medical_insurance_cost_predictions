@@ -6,7 +6,7 @@
 1. Clone the repository  
 ```git clone https://github.com/Annieelhm2/ml_model_uk_personal_medical_insurance_cost_predictions.git```
 2. Navigate to Project Directory  
-```cd ml_model_uk_personal_medical_insurance_cost_predictions```
+```cd .\ml_model_personal_medical_insurance_cost_predictions\```
 3. Install the required dependencies  
 ```pip install -r requirements.txt```
 4. Rerun the Jupyter Notebook File  
