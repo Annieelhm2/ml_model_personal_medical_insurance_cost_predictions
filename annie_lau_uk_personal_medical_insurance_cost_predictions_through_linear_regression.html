@@ -7528,7 +7528,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <blockquote>
-<p><strong><em>Note.</em></strong> This is completely self-taught, and this is my first machine learning project. Hence, I used AI tools for light assistance (e.g., discovering library functions). All modeling choices, and analysis are my own.</p>
+<p><strong><em>Note.</em></strong> This is completely self-taught, and this is my first machine learning project. Hence, I used AI tools for light assistance (e.g., discovering library functions). All modeling choices and analysis are my own.</p>
 </blockquote>
 </div>
 </div>
@@ -7566,8 +7566,8 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="1.-Overview">1. Overview<a class="anchor-link" href="#1.-Overview">¶</a></h2><p><strong>Problem:</strong> Many United Kingdom citizens find it hard to budget their individual medical insurance costs.</p>
 <p><strong>Dataset:</strong> Kaggle's "Medical Cost Personal Dataset".</p>
-<p><strong>Goal:</strong> Predict people's individual medical insurance costs based on relevant attributes, such as bmi, age, number of children, through linear regression. Features are relevantly engineered through exploratory data analysis.</p>
-<p><strong>Outcome:</strong> Successfully created medical insurance cost prediction model based on linear regression, that achieved an 85% accuracy rate based on R^2 values.</p>
+<p><strong>Goal:</strong> Predict people's individual medical insurance costs based on relevant attributes, such as BMI, age, number of children, through linear regression. Features are relevantly engineered through exploratory data analysis.</p>
+<p><strong>Outcome:</strong> Successfully created a medical insurance cost prediction model based on linear regression that achieved an 85% accuracy rate based on R^2 values.</p>
 </div>
 </div>
 </div>
@@ -7579,8 +7579,8 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="2.-Dataset-Information-and-Selection">2. Dataset Information and Selection<a class="anchor-link" href="#2.-Dataset-Information-and-Selection">¶</a></h2><h3 id="2.1-Dataset-Link">2.1 Dataset Link<a class="anchor-link" href="#2.1-Dataset-Link">¶</a></h3><p><a href="https://www.kaggle.com/datasets/mirichoi0218/insurance">https://www.kaggle.com/datasets/mirichoi0218/insurance</a></p>
-<h3 id="2.2-Dataset-Summary">2.2 Dataset Summary<a class="anchor-link" href="#2.2-Dataset-Summary">¶</a></h3><p>This data provides the individual medical insurance costs in United Kingdom. They are billed by health insurance for primary beneficiaries. These are out-of-pocket or claim-based expenses rather than premiums, co-pays, or employer-sponsored group plans. The "charges" represent the total billed amount for healthcare services (e.g., doctor visits, treatments, hospitalizations) that the insurance company processes, influenced by factors like age, health risks (BMI, smoking), and family size.</p>
-<h3 id="2.3-Dataset-Relevancy">2.3 Dataset Relevancy<a class="anchor-link" href="#2.3-Dataset-Relevancy">¶</a></h3><p>This dataset is relevant because it directly tells us UK citizen's personal medical insurance costs. It also has relevant features, such as age, bmi, and number of children.</p>
+<h3 id="2.2-Dataset-Summary">2.2 Dataset Summary<a class="anchor-link" href="#2.2-Dataset-Summary">¶</a></h3><p>These data provide the individual medical insurance costs in the United Kingdom. They are billed by health insurance for primary beneficiaries. These are out-of-pocket or claim-based expenses rather than premiums, co-pays, or employer-sponsored group plans. The "charges" represent the total billed amount for healthcare services (e.g., doctor visits, treatments, hospitalizations) that the insurance company processes, influenced by factors like age, health risks (BMI, smoking), and family size.</p>
+<h3 id="2.3-Dataset-Relevancy">2.3 Dataset Relevancy<a class="anchor-link" href="#2.3-Dataset-Relevancy">¶</a></h3><p>This dataset is relevant because it directly tells us UK citizens' personal medical insurance costs.</p>
 </div>
 </div>
 </div>
@@ -7611,7 +7611,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#import all packages</span>
@@ -7645,7 +7645,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"insurance.csv"</span><span class="p">)</span>
@@ -7660,7 +7660,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[56]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7774,7 +7774,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#printing summary statistics</span>
@@ -7794,7 +7794,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[57]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7885,7 +7885,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># decile means with 95% confidence interval</span>
@@ -7927,7 +7927,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Findings:</strong> This shows that there is roughly an upward linear correlation between mean charges and age. Therefore, age would be a feature in the model.</p>
+<p><strong>Findings:</strong> This shows that there is roughly an upward linear correlation between mean charges and age. Therefore, age will be a feature in the model.</p>
 </div>
 </div>
 </div>
@@ -7947,7 +7947,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># mean charges by BMI (line graph)</span>
@@ -7994,7 +7994,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Findings:</strong> There is a slight correlation between bmi and mean charges. The correlation is stronger for smokers. Therefore, bmi, bmi^2 and bmi*smokers (where smokers=1, non-smokers=0) will be features in the model.</p>
+<p><strong>Findings:</strong> There is a slight correlation between BMI and mean charges. The correlation is stronger for smokers. Therefore, BMI, BMI^2 and BMI*smokers (where smokers = 1, non-smokers = 0) will be features in the model.</p>
 </div>
 </div>
 </div>
@@ -8014,7 +8014,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># bar chart creation</span>
@@ -8084,7 +8084,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Findings:</strong> This shows that there is a significant difference in mean charges between different sex's mean charges in medical costs. Hence, sex will be a feature in the model, with male=1 and female=0.</p>
+<p><strong>Findings:</strong> This shows that there is a significant difference in mean charges between the sexes.</p>
 </div>
 </div>
 </div>
@@ -8095,7 +8095,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="4.4-Mean-Charges-by-whether-the-Person-is-a-Smoker-(Bar-Chart)">4.4 Mean Charges by whether the Person is a Smoker (Bar Chart)<a class="anchor-link" href="#4.4-Mean-Charges-by-whether-the-Person-is-a-Smoker-(Bar-Chart)">¶</a></h3>
+<h3 id="4.5-Mean-Charges-by-whether-the-Person-is-a-Smoker-(Bar-Chart)">4.5 Mean Charges by whether the Person is a Smoker (Bar Chart)<a class="anchor-link" href="#4.5-Mean-Charges-by-whether-the-Person-is-a-Smoker-(Bar-Chart)">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8104,7 +8104,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># mean charges by whether the Person is a Smoker </span>
@@ -8133,7 +8133,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Findings:</strong> This shows that there is a significant difference in mean charges between different whether a person smokes and the mean medical cost charges. Hence, whether a person is a smoker or not will be engineered as a feature in the model, with smoker = 1 and non-smoker = 0.</p>
+<p><strong>Findings:</strong> This shows that there is a significant difference in mean charges between smokers and non-smokers. Hence, whether a person is a smoker or not will be engineered as a feature in the model, with smoker = 1 and non-smoker = 0.</p>
 </div>
 </div>
 </div>
@@ -8144,7 +8144,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="5.-Model-Training">5. Model Training<a class="anchor-link" href="#5.-Model-Training">¶</a></h2><h3 id="5.1-Training-Methodology">5.1 Training Methodology<a class="anchor-link" href="#5.1-Training-Methodology">¶</a></h3><p>The model would be trained by randomly selecting 70% of the data, and implementing linear regression. Age, bmi, bmi^2, smoker, sex, and smoker*bmi will be the features engined.</p>
+<h2 id="5.-Model-Training">5. Model Training<a class="anchor-link" href="#5.-Model-Training">¶</a></h2><h3 id="5.1-Training-Methodology">5.1 Training Methodology<a class="anchor-link" href="#5.1-Training-Methodology">¶</a></h3><p>The model will be trained by randomly selecting 70% of the data, and implementing linear regression. Age, BMI, BMI^2, smoker, sex, and smoker*BMI will be the features engineered.</p>
 </div>
 </div>
 </div>
@@ -8164,7 +8164,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Build Features</span>
@@ -8199,7 +8199,7 @@ a.anchor-link {
     <span class="sa">f</span><span class="s2">" + </span><span class="si">{</span><span class="n">fmt</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="s1">'smoker'</span><span class="p">])</span><span class="si">}</span><span class="s2">·smoker"</span>
     <span class="sa">f</span><span class="s2">" + </span><span class="si">{</span><span class="n">fmt</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="s1">'sex'</span><span class="p">])</span><span class="si">}</span><span class="s2">·sex"</span>
     <span class="sa">f</span><span class="s2">" + </span><span class="si">{</span><span class="n">fmt</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="s1">'smoker_bmi'</span><span class="p">])</span><span class="si">}</span><span class="s2">·(smoker×bmi)"</span>
-    <span class="s2">"</span><span class="se">\n</span><span class="s2">(where smoker ∈ {0 = non-smoker, 1 = smoker}, gender ∈ {1=male, 0=female})"</span>
+    <span class="s2">"</span><span class="se">\n</span><span class="s2">(where smoker ∈ {0 = non-smoker, 1 = smoker}, sex ∈ {1 = male, 0 = female})"</span>
 <span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">equation</span><span class="p">)</span>
 </pre></div>
@@ -8215,7 +8215,7 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>ŷ (medical costs) = -11,154.7659 + 268.3272·age + 597.7797·bmi + -9.2871·bmi² + -20,679.4518·smoker + -350.5300·sex + 1,454.8993·(smoker×bmi)
-(where smoker ∈ {0 = non-smoker, 1 = smoker}, gender ∈ {1=male, 0=female})
+(where smoker ∈ {0 = non-smoker, 1 = smoker}, sex ∈ {1 = male, 0 = female})
 </pre>
 </div>
 </div>
@@ -8228,7 +8228,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="5.3-Medical-Cost-Model-Equation">5.3 Medical Cost Model Equation<a class="anchor-link" href="#5.3-Medical-Cost-Model-Equation">¶</a></h3><p>for smoker ∈ {0 = non-smoker, 1 = smoker}, sex ∈ {1=male, 0=female}<br/>
+<h3 id="5.3-Medical-Cost-Model-Equation">5.3 Medical Cost Model Equation<a class="anchor-link" href="#5.3-Medical-Cost-Model-Equation">¶</a></h3><p>for smoker ∈ {0 = non-smoker, 1 = smoker}, sex ∈ {1 = male, 0 =f emale}<br/>
 Medical Costs = -11,154.7659 + 268.3272·Age + 597.7797·BMI + -9.2871·BMI² + -20,679.4518·Smoker + -350.5300·Sex + 1,454.8993·(Smoker×BMI)</p>
 </div>
 </div>
@@ -8260,7 +8260,7 @@ Medical Costs = -11,154.7659 + 268.3272·Age + 597.7797·BMI + -9.2871·BMI² + 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">y_tr_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_tr</span><span class="p">)</span>
@@ -8324,7 +8324,7 @@ Medical Costs = -11,154.7659 + 268.3272·Age + 597.7797·BMI + -9.2871·BMI² + 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_te</span><span class="p">)</span>
@@ -8373,7 +8373,7 @@ R²: 0.8581
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="6.5-Model-Limitations">6.5 Model Limitations<a class="anchor-link" href="#6.5-Model-Limitations">¶</a></h3><p>Only age, bmi, sex, and whether a person is a smoker is considered in the model. There might be other significant factors, such as living conditions which influences the medical cost. In addition, past data might not be representative of current data. For example, during the Covid-19, the medical costs for older people increased a lot because Covid-19 affects older people more.</p>
+<h3 id="6.5-Model-Limitations">6.5 Model Limitations<a class="anchor-link" href="#6.5-Model-Limitations">¶</a></h3><p>Only age, BMI sex, and whether a person is a smoker are considered in the model. There might be other significant factors, such as living conditions, which influence the medical cost. For example, during the Covid-19 pandemic, the medical costs for older people increased a lot because Covid-19 affects older people more.</p>
 </div>
 </div>
 </div>
